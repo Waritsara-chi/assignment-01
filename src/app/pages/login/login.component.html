@@ -1,0 +1,122 @@
+<body>
+  <div
+    fxlayout="row"
+    fxlayoutalign="center center"
+    class="my-light-theme"
+    style="
+      height: 100%;
+      flex-direction: row;
+      box-sizing: border-box;
+      display: flex;
+      place-content: center;
+      align-items: center;
+    "
+  >
+    <mat-card class="mat-card mat-focus-indicator" style="width: 400px">
+      <mat-card-title>
+        <div
+          fxlayout="row"
+          fxlayoutalign="center center"
+          style="
+            flex-direction: row;
+            box-sizing: border-box;
+            display: flex;
+            place-content: center;
+            align-items: center;
+            font-size: 24px;
+            font-weight: light;
+            padding-top: 16px;
+          "
+        >
+          <mat-icon
+            role="img"
+            class="mat-icon notranslate material-icons mat-ligature-font mat-icon-no-color"
+            aria-hidden="true"
+            data-mat-icon-type="font"
+            style="padding-right: 14px"
+            >lock</mat-icon
+          >
+          Login to My System
+        </div>
+      </mat-card-title>
+
+      <mat-card-subtitle
+        class="mat-card-subtitle"
+        style="
+          width: 100%;
+          margin-left: 0%;
+          font-size: 14px;
+          padding-left: 16px;
+        "
+      >
+        Please enter username and password
+      </mat-card-subtitle>
+
+      <mat-card-content>
+        <!-- Email -->
+        <mat-form-field
+        class="my-light-theme dense-2"
+          mat-form-field-outline-thick
+          appearance="outline"
+          style="width: 100%; margin: 0%; padding: 0%"
+        >
+          <mat-label>Email</mat-label>
+          <input matInput />
+        </mat-form-field>
+
+        <!-- Password -->
+        <mat-form-field
+          class="my-light-theme dense-2"
+          appearance="outline"
+          style="width: 100%; margin: 0%; padding: 0%"
+        >
+          <mat-label>Password</mat-label>
+          <input matInput />
+        </mat-form-field>
+
+        <mat-card-actions>
+          <div
+            fxlayout="row"
+            fxlayoutalign="space-between center"
+            style="
+              flex-direction: row;
+              box-sizing: border-box;
+              display: flex;
+              place-content: center space-between;
+              align-items: center;
+              width: 100%;
+              margin-bottom: -15%;
+              font-weight: 500;
+              margin-top: -15px
+            "
+          >
+            <button
+              mat-button
+              class="mat-focus-indicator mat-flat-button mat-button-base"
+              style="margin-left: -10px;"
+            >
+              <span class="mat-button-wrapper" style="font-size: 14px"
+                >Sign Up</span
+              >
+              <span matripple="" class="mat-ripple mat-button-ripple"></span>
+              <span class="mat-button-focus-overlay"></span>
+            </button>
+            <button
+              routerLink="main"
+              mat-flat-button
+              class="mat-focus-indicator mat-flat-button mat-button-base"
+              style="margin-right: -10px;"
+            >
+              <span class="mat-button-wrapper" style="font-size: 14px; color: white;">
+                Login
+              </span>
+              <span matripple="" class="mat-ripple mat-button-ripple"></span>
+              <span class="mat-button-focus-overlay"></span>
+            </button>
+          </div>
+        </mat-card-actions>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</body>
+<router-outlet></router-outlet>

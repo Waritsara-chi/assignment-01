@@ -1,0 +1,46 @@
+// At the first line
+@use '@angular/material' as mat;
+
+body {
+  height: 100%;
+  background-color: darkgray;
+}   
+.mat-card-subtitle {
+  display: block;
+  margin-bottom: 16px;
+  color: gray;
+  font-weight: normal;
+}
+.my-light-theme .mat-card {
+  background: white;
+  color: #000000de;
+}
+
+mat-label{
+  font-size: 14px;
+  
+}
+
+* {
+  color: black;
+  --mdc-outlined-text-field-outline-color: rgb(0, 0, 0) !important;
+  --mdc-outlined-text-field-hover-outline-color: rgb(0, 0, 0) !important;
+  --mdc-outlined-text-field-focus-outline-color: rgb(0, 0, 0) !important;
+}
+
+.mat-mdc-unelevated-button:not(:disabled) {
+  background-color: rgba(63,81,181,255);
+}
+
+
+.dense-1 {
+    @include mat.all-component-densities(-1);
+}
+
+.dense-2 {
+    @include mat.all-component-densities(-2);
+}
+
+.dense-3 {
+    @include mat.all-component-densities(-3);
+}

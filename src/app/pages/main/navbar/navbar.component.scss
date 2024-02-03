@@ -1,0 +1,34 @@
+.container {
+  height: 65px;
+  color: yellow;
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+  // padding-left: 10px;
+}
+
+.font-head {
+  font-size: 32px;
+  color: white;
+  font-weight: bold;
+}
+
+.button {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
+  width: 100%;
+  color: white;
+  font-size: 14px;
+  margin-right: 35px;
+}
+
+button:hover {
+  background-color: rgba(42, 42, 42, 255);
+}
